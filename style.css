@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    color: #fff;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#head{
+    height: 80px;
+}
+#head ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0px;
+}
+#head ul li{
+    list-style-type: none;
+}
+#head ul li a {
+    text-decoration: none;
+    /* list-style-type: none; */
+}
+.hero1 {
+    width: 100%;
+    height: 40vw;
+    color: white;
+    background: url(https://media.istockphoto.com/id/1205274326/photo/male-hand-showing-offering-a-new-dream-house-at-the-empty-field-with-copy-space.jpg?s=1024x1024&w=is&k=20&c=b0qTpE0DDrF-7q_ILSOuyDjnnol_VhRF7axIN_ZrQnI=);
+    background-size: cover;
+    padding-left: 50px;
+}
+.hero1 p{
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.hero2{
+    margin-top: 40px;
+    line-height: 30px;
+}
+.hero2 h2{
+    font-size: 40px;
+    text-align: center;
+    /* color: blue; */
+}
+.line{
+    height: 10px;
+    background-color: red;
+    width: 50vw;
+    margin-left: 24rem;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.reasons{
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.reasons .card{
+   /* border: 2px solid red; */
+   border-radius: 5px;
+   background-color:rgba(218, 112, 214, 0.452);
+   width: 40vw;
+   padding: 10px;
+   margin: 10px;
+   transition: all 0.5s;
+}
+.reasons .card:hover{
+    background: blue;
+    transform: translateX(10px);
+    box-shadow: 10px 10px 10px blueviolet;
+}
+.f-projects{
+    width: 100%;
+    height: 30vw;
+    color: white;
+    background: url(https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    padding: 40px;
+}
+.f-projects h2{
+    text-align: center;
+    font-size: 30px;
+    color:red;
+    font-weight: 900;
+}
+.f-projects ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.testimonials {
+   padding: 40px;
+}
+.testimonials h2{
+    font-size: 50px;
+    color: rgb(153, 160, 95);
+    transition: all 0.5s;
+}
+.testimonials h2:hover{
+    background-color:  rgb(153, 160, 95);
+    transform: translateX(10px);
+    color: #fff;
+    border-radius: 10px;
+}
+.testi{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
+.testi p{
+    width: 250px;
+    /* border: 1px solid red; */
+    padding: 20px;
+    line-height: 25px;
+    background-color: rgba(128, 128, 128, 0.566);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.testi p:hover{
+    background-color: aqua;
+    transform: translateX(-10px);
+    color: black;
+}
+.info{
+    padding-left: 50px;
+    line-height: 20px;
+}
+.info p{
+    margin: 20px;
+    font-weight: 800;
+}
+#new-page{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    margin: 20px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: red;
+    transition: all 0.5s;
+}
+#new-page:hover{
+    background-color: aqua;
+    transform: translateX(20px);
+}
+#new-page button{
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
+    background-color:black;
+    color: #fff;
+}
+@media only screen and (max-width:768px){
+    #head {
+        height: auto;
+    }
+     #head ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    #head ul li {
+        margin: 10px 0;
+   }
+     .hero1, .hero2, .f-projects, .testimonials {
+        padding: 10px;
+    }
+    .hero1 {
+        height: auto;
+        width: 100%;
+    }
+    .reasons {
+        padding: 20px;
+    }
+    .reasons .card {
+        width: 90%;
+    }
+    .f-projects h2 {
+        font-size: 24px;
+    }
+    .f-projects ul {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .testimonials h2 {
+        font-size: 40px;
+    }
+    .testi p {
+        width: 100%;
+    }
+    .info {
+        padding-left: 20px;
+    }
+    .info p {
+        margin: 10px;
+        font-size: 16px;
+    }  
+}
